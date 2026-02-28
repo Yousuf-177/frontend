@@ -186,7 +186,7 @@ export default function Home() {
 
           {/* separation */}
           {results && results.length > 0 && (
-            <div className="m-4 w-full h-[3px] bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 animate-gradient"></div>
+            <div className="m-4 w-full h-[0.75] bg-linear-to-r from-blue-500 via-purple-500 to-pink-500 animate-gradient"></div>
           )}
 
           {/* MULTI-RESULT OUTPUT BLOCK */}
@@ -212,7 +212,7 @@ export default function Home() {
 
                     {/* annotated image (fixed box so it won't expand layout) */}
                     <div className="w-full flex justify-center">
-                      <div className="w-full max-w-[640px] h-[420px] bg-black/10 rounded overflow-hidden flex items-center justify-center">
+                      <div className="w-full max-w-160 h-105 bg-black/10 rounded overflow-hidden flex items-center justify-center">
                         {resObj.image_base64 ? (
                           <img
                             src={
